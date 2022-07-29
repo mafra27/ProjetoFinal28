@@ -7,7 +7,7 @@ const database = require("./database/mongooseConnect")
 const aulasRouter = require("./routes/aulasRoutes")
 
 app.use(express.json())
-app.use("/aulas", aulasRouter)
+//app.use("/aulas", aulasRouter)
 
 database.connect()
 
