@@ -6,6 +6,7 @@ router.get("/biblioteca", controller.getAllAulas)
 
 
 //essas sao as minhas rotas, estao certas?
-router.get("biblioteca", controller.getAllAulas)
+router.get("conteudoGeral", controller.getAllAulas)
+router.get("conteudo")
 
 module.exports = router
