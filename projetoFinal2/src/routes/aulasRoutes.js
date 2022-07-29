@@ -4,4 +4,4 @@ const express = require('express')
 const router = express.Router()
 router.get("/biblioteca", controller.getAllAulas)
 
-module.exports=router
+module.exports = router
