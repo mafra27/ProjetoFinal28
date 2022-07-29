@@ -4,6 +4,8 @@ const express = require('express')
 const router = express.Router()
 router.get("/biblioteca", controller.getAllAulas)
 
-router.get("")
+
+//essas sao as minhas rotas, estao certas?
+router.get("biblioteca", controller.getAllAulas)
 
 module.exports = router
