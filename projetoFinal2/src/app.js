@@ -14,6 +14,12 @@ app.use('/', index);
 
 database.connect()
 
+const swaggerUi = require('swagger-ui-express');
+
+const swaggerFile = require('../swagger/swagger_output.json');
+
+app.use('/minha-rota-de-documentacao', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+
 app.get("/", (req, res) => res.status(200).send({
     "API": "Back-up Memory",
     "versao": "1.0.0",
