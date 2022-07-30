@@ -2,7 +2,6 @@ const controller = require('../controller/aulasController')
 const express = require('express')
 
 const router = express.Router()
-router.get("/biblioteca", controller.getAllAulas)
 
 
 

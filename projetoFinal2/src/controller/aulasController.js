@@ -4,9 +4,7 @@ const mongoose = require("mongoose")
 const getAllAulas = async (request, response) => {
     try {
         const aulas = await aulasModels.find()
-        response.status(200).json([{
-            "Aulas": aulas
-        }])
+        response.status(200).json(aulas)
     } catch (error) {
         response.status(500).send(error.message)
     }

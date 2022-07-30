@@ -9,6 +9,9 @@ const aulasRouter = require("./routes/aulasRoutes");
 app.use(express.json())
 app.use("/aulas", aulasRouter)
 
+const index = require('../src/routes/index.js')
+app.use('/', index);
+
 database.connect()
 
 app.get("/", (req, res) => res.status(200).send({
