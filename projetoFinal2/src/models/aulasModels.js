@@ -26,10 +26,16 @@ const aulaSchema = new mongoose.Schema({
         type: String,
         required: false
     },
+    linkExtra3:{
+        type: String, 
+        default: false
+
+    },
     dataHora:{
         type: Date, 
         default: new Date()
-    },
+    }
+
 })
 
 module.exports= mongoose.model("aulas", aulaSchema)
